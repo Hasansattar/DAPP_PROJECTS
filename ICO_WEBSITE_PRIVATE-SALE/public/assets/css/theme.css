@@ -1,0 +1,208 @@
+/*!
+Template :	ICOCrypto @by Softnio
+Theme	 :  Default
+Version	 :	1.9.5
+Updated	 :	04.02.2022
+*/
+
+/*! WRITE YOUR CUSTOM STYLE **/
+
+.logo img {
+    height: 80px;
+}
+
+.mask-c-blend-dark {
+    background-image: linear-gradient( 45deg, #000, #4f2f01 52%, #ff9100) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.has-fixed.is-dark .header-main {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.nk-df-mask-c-dark,
+.mask-c-dark:before,
+.mask-c-dark-bg {
+    background-image: url(../images/mask-c-dark.svg);
+}
+
+.btn-grad {
+    border: none;
+    background-image: linear-gradient(to right, #f58c14 0%, #ffa909 100%);
+}
+
+.menu-item>a.active {
+    color: #ff9100;
+}
+
+.section-connect:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    height: 80px;
+    width: 2px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top, #46bdf4 0%, #2b56f5 100%);
+    z-index: 2;
+    display: none;
+}
+
+.customize-bg {
+    background: #412702;
+}
+
+.is-dark .header-navbar::before {
+    background: #4f2f01;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #4f2f01;
+}
+
+.tc-light .team-social-s2 li a {
+    color: #ff9100 !important;
+}
+
+.tc-light .team-s3-alt .team-position {
+    color: #ff9100;
+}
+
+.is-transparent:not(.has-fixed):not(.is-light) .menu>.menu-item:hover>a {
+    color: #ff9100;
+}
+
+.is-dark .menu-item a .active,
+.is-dark .menu-item a:hover {
+    color: #ff9100;
+}
+
+.btn-grad-alternet:before {
+    background-image: linear-gradient(to right, #f58c14 0%, #ffa909 100%);
+}
+
+.mergeImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.nk-df-shape-v,
+.shape-v:after,
+.shape-v-bg {
+    background-image: url(./../../images/rog/shape-v.png);
+}
+
+.text-yellow-500 {
+    --tw-text-opacity: 1;
+    color: rgb(234 179 8 / var(--tw-text-opacity)) !important;
+}
+
+.cpn-text p {
+    color: #fff !important;
+    font-size: inherit !important;
+}
+
+.title-s6:before {
+    --tw-text-opacity: 1;
+    background: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.bg-roadmap {
+    background: #412702 !important;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #412702;
+    font-size: 14px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0.5rem;
+}
+
+.section-head .title:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: attr(title);
+    font-family: "Poppins", sans-serif;
+    line-height: .9;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    opacity: 0.06;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.games-bg {
+    background: #412702;
+}
+
+.team-photo-bg:before {
+    background-image: linear-gradient(90deg, #ff9100 0%, #e68403 100%);
+}
+
+.game .game-photo {
+    width: 150px;
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+.nestedlist {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.tc-light .social li a:hover .social-icon {
+    background: #ff9100;
+}
+
+.poweredBy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+.poweredBy p {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+    .roadmap-card {
+        min-height: 520px;
+    }
+    .minHeight270 {
+        min-height: 380px;
+    }
+}

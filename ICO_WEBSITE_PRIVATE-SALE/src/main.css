@@ -1,0 +1,607 @@
+@import url(https://fonts.googleapis.com/css2?family=Baloo+2&display=swap);
+.alert {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
+}
+
+.txtBoxAmount:focus {
+    outline: none
+}
+
+.btnBuy {
+    background: #eab308;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.btnBuy:focus {
+    outline: none
+}
+
+.btnBuy:hover {
+    background: #f3c640
+}
+
+.metamask-width {
+    width: 15%
+}
+
+.metamask-bg {
+    background: none;
+    cursor: pointer
+}
+
+.metamask-bg:focus {
+    outline: none
+}
+
+.metamask-bg:hover {
+    background: hsla(0, 0%, 100%, .1)
+}
+
+.card-custom {
+    border: 0;
+    box-shadow: 0 0 15px hsla(0, 0%, 4%, .3);
+    height: 450px;
+    overflow: hidden
+}
+
+.card-custom-img {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    min-height: 200px
+}
+
+.card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px hsla(0, 0%, 4%, .3);
+    height: 100px;
+    left: 1.25rem;
+    position: absolute;
+    top: 100px;
+    width: 100px
+}
+
+.ps {
+    -ms-overflow-style: none;
+    overflow: hidden !important;
+    overflow-anchor: none;
+    touch-action: auto;
+    -ms-touch-action: auto
+}
+
+.ps__rail-x {
+    bottom: 0;
+    height: 15px
+}
+
+.ps__rail-x,
+.ps__rail-y {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    transition: background-color .2s linear, opacity .2s linear;
+    -webkit-transition: background-color .2s linear, opacity .2s linear
+}
+
+.ps__rail-y {
+    right: 0;
+    width: 15px
+}
+
+.ps--active-x>.ps__rail-x,
+.ps--active-y>.ps__rail-y {
+    background-color: transparent;
+    display: block
+}
+
+.ps--focus>.ps__rail-x,
+.ps--focus>.ps__rail-y,
+.ps--scrolling-x>.ps__rail-x,
+.ps--scrolling-y>.ps__rail-y,
+.ps:hover>.ps__rail-x,
+.ps:hover>.ps__rail-y {
+    opacity: .6
+}
+
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y.ps--clicking,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y:hover {
+    background-color: #eee;
+    opacity: .9
+}
+
+.ps__thumb-x {
+    bottom: 2px;
+    height: 6px;
+    transition: background-color .2s linear, height .2s ease-in-out;
+    -webkit-transition: background-color .2s linear, height .2s ease-in-out
+}
+
+.ps__thumb-x,
+.ps__thumb-y {
+    background-color: #aaa;
+    border-radius: 6px;
+    position: absolute
+}
+
+.ps__thumb-y {
+    right: 2px;
+    transition: background-color .2s linear, width .2s ease-in-out;
+    -webkit-transition: background-color .2s linear, width .2s ease-in-out;
+    width: 6px
+}
+
+.ps__rail-x.ps--clicking .ps__thumb-x,
+.ps__rail-x:focus>.ps__thumb-x,
+.ps__rail-x:hover>.ps__thumb-x {
+    background-color: #999;
+    height: 11px
+}
+
+.ps__rail-y.ps--clicking .ps__thumb-y,
+.ps__rail-y:focus>.ps__thumb-y,
+.ps__rail-y:hover>.ps__thumb-y {
+    background-color: #999;
+    width: 11px
+}
+
+@supports (-ms-overflow-style:none) {
+    .ps {
+        overflow: auto !important
+    }
+}
+
+@media (-ms-high-contrast:none),
+screen and (-ms-high-contrast:active) {
+    .ps {
+        overflow: auto !important
+    }
+}
+
+.scrollbar-container {
+    height: 100%;
+    position: relative
+}
+
+#pageHeaderTitle {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.postcard {
+    background: #412702;
+    border-radius: 10px;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2rem;
+    overflow: hidden;
+    position: relative
+}
+
+.postcard.dark {
+    background-color: #18151f
+}
+
+.postcard.light {
+    background-color: #e1e5ea
+}
+
+.postcard .t-dark {
+    color: #18151f
+}
+
+.postcard a {
+    color: inherit
+}
+
+.postcard .h1,
+.postcard h1 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem
+}
+
+.postcard .small {
+    font-size: 80%
+}
+
+.postcard .postcard__title {
+    font-size: 1.75rem
+}
+
+.postcard .postcard__img {
+    max-height: 180px;
+    object-fit: cover;
+    position: relative;
+    width: 100%
+}
+
+.postcard .postcard__img_link {
+    display: contents
+}
+
+.postcard .postcard__bar {
+    background-color: #eab308;
+    border-radius: 5px;
+    height: 10px;
+    margin: 10px 0;
+    transition: width .2s ease;
+    width: 50px
+}
+
+.postcard .postcard__text {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    position: relative
+}
+
+.postcard .postcard__preview-txt {
+    height: 100%;
+    overflow: hidden;
+    text-align: justify;
+    text-overflow: ellipsis
+}
+
+.postcard .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    justify-content: center;
+    margin: 20px 0 0;
+    padding: 0
+}
+
+.postcard .postcard__tagbox .tag__item {
+    background: rgba(83, 83, 83, .4);
+    border-radius: 3px;
+    cursor: default;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 2.5px 10px;
+    transition: background-color .3s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.postcard .postcard__tagbox .tag__item:hover {
+    background: rgba(83, 83, 83, .8)
+}
+
+.postcard:before {
+    background-image: linear-gradient(-70deg, #8f4c0e, transparent 30%);
+    border-radius: 10px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.postcard:hover .postcard__bar {
+    width: 100px
+}
+
+@media screen and (min-width:769px) {
+    .postcard {
+        flex-wrap: inherit
+    }
+    .postcard .postcard__title {
+        font-size: 2rem
+    }
+    .postcard .postcard__tagbox {
+        justify-content: start
+    }
+    .postcard .postcard__img {
+        max-height: 100%;
+        max-width: 300px;
+        transition: -webkit-transform .3s ease;
+        transition: transform .3s ease;
+        transition: transform .3s ease, -webkit-transform .3s ease
+    }
+    .postcard .postcard__text {
+        padding: 3rem;
+        width: 100%
+    }
+    .postcard .media.postcard__text:before {
+        background: #18151f;
+        content: "";
+        display: block;
+        height: 130%;
+        position: absolute;
+        top: -20%;
+        width: 55px
+    }
+    .postcard:hover .postcard__img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    .postcard:nth-child(odd) {
+        flex-direction: row
+    }
+    .postcard:nth-child(2n+0) {
+        flex-direction: row-reverse
+    }
+    .postcard:nth-child(odd) .postcard__text:before {
+        left: -12px !important;
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+    .postcard:nth-child(2n+0) .postcard__text:before {
+        right: -12px !important;
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .postcard__text {
+        padding: 2rem 3.5rem
+    }
+    .postcard__text:before {
+        content: "";
+        display: block;
+        height: 130%;
+        position: absolute;
+        top: -20%;
+        width: 55px
+    }
+    .postcard.dark .postcard__text:before {
+        background: #18151f
+    }
+    .postcard.light .postcard__text:before {
+        background: #e1e5ea
+    }
+}
+
+.postcard .postcard__tagbox .green.play:hover {
+    background: #79dd09;
+    color: #000
+}
+
+.green .postcard__title:hover {
+    color: #79dd09
+}
+
+.green .postcard__bar {
+    background-color: #79dd09
+}
+
+.green:before {
+    background-image: linear-gradient(-30deg, rgba(121, 221, 9, .1), transparent 50%)
+}
+
+.green:nth-child(2n):before {
+    background-image: linear-gradient(30deg, rgba(121, 221, 9, .1), transparent 50%)
+}
+
+.postcard .postcard__tagbox .blue.play:hover {
+    background: #0076bd
+}
+
+.blue .postcard__title:hover {
+    color: #0076bd
+}
+
+.blue .postcard__bar {
+    background-color: #0076bd
+}
+
+.blue:before {
+    background-image: linear-gradient(-30deg, rgba(0, 118, 189, .1), transparent 50%)
+}
+
+.blue:nth-child(2n):before {
+    background-image: linear-gradient(30deg, rgba(0, 118, 189, .1), transparent 50%)
+}
+
+.postcard .postcard__tagbox .red.play:hover {
+    background: #bd150b
+}
+
+.red .postcard__title:hover {
+    color: #bd150b
+}
+
+.red .postcard__bar {
+    background-color: #bd150b
+}
+
+.red:before {
+    background-image: linear-gradient(-30deg, rgba(189, 21, 11, .1), transparent 50%)
+}
+
+.red:nth-child(2n):before {
+    background-image: linear-gradient(30deg, rgba(189, 21, 11, .1), transparent 50%)
+}
+
+.postcard .postcard__tagbox .yellow.play:hover {
+    background: #bdbb49;
+    color: #000
+}
+
+.yellow .postcard__title:hover {
+    color: #bdbb49
+}
+
+.yellow .postcard__bar {
+    background-color: #bdbb49
+}
+
+.yellow:before {
+    background-image: linear-gradient(-30deg, rgba(189, 187, 73, .1), transparent 50%)
+}
+
+.yellow:nth-child(2n):before {
+    background-image: linear-gradient(30deg, rgba(189, 187, 73, .1), transparent 50%)
+}
+
+@media screen and (min-width:769px) {
+    .green:before {
+        background-image: linear-gradient(-80deg, rgba(121, 221, 9, .1), transparent 50%)
+    }
+    .green:nth-child(2n):before {
+        background-image: linear-gradient(80deg, rgba(121, 221, 9, .1), transparent 50%)
+    }
+    .blue:before {
+        background-image: linear-gradient(-80deg, rgba(0, 118, 189, .1), transparent 50%)
+    }
+    .blue:nth-child(2n):before {
+        background-image: linear-gradient(80deg, rgba(0, 118, 189, .1), transparent 50%)
+    }
+    .red:before {
+        background-image: linear-gradient(-80deg, rgba(189, 21, 11, .1), transparent 50%)
+    }
+    .red:nth-child(2n):before {
+        background-image: linear-gradient(80deg, rgba(189, 21, 11, .1), transparent 50%)
+    }
+    .yellow:before {
+        background-image: linear-gradient(-80deg, rgba(189, 187, 73, .1), transparent 50%)
+    }
+    .yellow:nth-child(2n):before {
+        background-image: linear-gradient(80deg, rgba(189, 187, 73, .1), transparent 50%)
+    }
+}
+
+.roadmap-area {
+    font-size: 12px;
+    padding: 100px 0;
+    position: relative
+}
+
+.roadmap-area .intro h3:before {
+    content: "ROADMAP";
+    font-size: 60px;
+    left: 0;
+    opacity: .03;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    white-space: nowrap;
+    width: 100%
+}
+
+.roadmap-innr {
+    max-width: 300px;
+    padding: 0 15px 15px
+}
+
+.roadmap-innr ul {
+    list-style: none;
+    padding-left: 0
+}
+
+.roadmap-item {
+    position: relative
+}
+
+.roadmap-list .roadmap-item .roadmap-innr:before {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.roadmap-list .roadmap-item .roadmap-innr:before,
+.roadmap-list .roadmap-item:last-child .roadmap-innr:before {
+    background-image: linear-gradient(180deg, #f58c14 0, #ffa909);
+    content: "";
+    height: 105%;
+    left: 0;
+    position: absolute;
+    width: 2px
+}
+
+.roadmap-list .roadmap-item:last-child .roadmap-innr:before {
+    -webkit-transform: translate(-50%, calc(-10% + 10px));
+    transform: translate(-50%, calc(-10% + 10px))
+}
+
+.roadmap-list .roadmap-item:last-child:after {
+    background: #f58c14;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100vw
+}
+
+.roadmap-title-s2:before {
+    background: #f58c14;
+    border: 1px solid #f58c14;
+    border-radius: 50%;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 15px
+}
+
+@media (min-width:992px) {
+    .roadmap-list {
+        align-items: flex-end;
+        display: flex
+    }
+    .roadmap-list .roadmap-item .roadmap-innr:before,
+    .roadmap-list .roadmap-item:nth-child(2) .roadmap-innr:before {
+        height: 100%
+    }
+    .roadmap-list .roadmap-item:first-child .roadmap-innr:before {
+        height: calc(95% + 15px)
+    }
+    .roadmap-list .roadmap-item:last-child .roadmap-innr:before {
+        height: calc(90% + 10px);
+        top: 10%
+    }
+    .roadmap-list .roadmap-item:last-child:after {
+        left: 0;
+        right: 0;
+        -webkit-transform: translateX(-77.4vw);
+        transform: translateX(-77.4vw)
+    }
+}
+
+@media (min-width:1072px) {
+    .roadmap-list .roadmap-item:last-child:after {
+        left: 0;
+        right: 0;
+        -webkit-transform: translateX(-78.3vw);
+        transform: translateX(-78.3vw)
+    }
+}
+
+@media (min-width:1586px) {
+    .roadmap-list .roadmap-item:last-child:after {
+        left: 0;
+        right: 0;
+        -webkit-transform: translateX(calc(-100vw + 344px));
+        transform: translateX(calc(-100vw + 344px))
+    }
+}
+
+/*# sourceMappingURL=main.f71e2930.css.map*/

@@ -1,0 +1,115 @@
+.roadmap-area {
+    position: relative;
+    padding: 100px 0;
+    font-size: 12px;
+}
+
+.roadmap-area .intro h3::before {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.03;
+    font-size: 60px;
+    content: 'ROADMAP';
+    transform: translate(0%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.roadmap-innr {
+    max-width: 300px;
+    padding: 0 15px 15px;
+}
+
+.roadmap-innr ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.roadmap-item {
+    position: relative;
+}
+
+.roadmap-list .roadmap-item .roadmap-innr::before {
+    position: absolute;
+    left: 0;
+    height: 105%;
+    width: 2px;
+    content: '';
+    transform: translateX(-50%);
+    background-image: linear-gradient(to bottom, #f58c14 0%, #ffa909 100%);
+}
+
+.roadmap-list .roadmap-item:last-child .roadmap-innr::before {
+    position: absolute;
+    left: 0;
+    height: 105%;
+    width: 2px;
+    content: '';
+    transform: translate(-50%, calc(-10% + 10px));
+    background-image: linear-gradient(to bottom, #f58c14 0%, #ffa909 100%);
+}
+
+.roadmap-list .roadmap-item:last-child::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    height: 2px;
+    background: #f58c14;
+    transform: translateX(-50%);
+}
+
+.roadmap-title-s2:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    transform: translate(-50%, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #f58c14;
+    border: 1px solid #f58c14;
+}
+
+@media (min-width: 992px) {
+    .roadmap-list {
+        display: flex;
+        align-items: flex-end;
+    }
+    .roadmap-list .roadmap-item .roadmap-innr::before {
+        height: 100%;
+    }
+    .roadmap-list .roadmap-item:nth-child(2) .roadmap-innr::before {
+        height: 100%;
+    }
+    .roadmap-list .roadmap-item:first-child .roadmap-innr::before {
+        height: calc(95% + 15px);
+    }
+    .roadmap-list .roadmap-item:last-child .roadmap-innr::before {
+        height: calc(90% + 10px);
+        top: 10%;
+    }
+    .roadmap-list .roadmap-item:last-child::after {
+        left: 0;
+        right: 0;
+        transform: translateX(calc(-100vw + 22.6vw));
+    }
+}
+
+@media (min-width: 1072px) {
+    .roadmap-list .roadmap-item:last-child::after {
+        left: 0;
+        right: 0;
+        transform: translateX(calc(-100vw + 21.7vw));
+    }
+}
+
+@media (min-width: 1586px) {
+    .roadmap-list .roadmap-item:last-child::after {
+        left: 0;
+        right: 0;
+        transform: translateX(calc(-100vw + 344px));
+    }
+}
