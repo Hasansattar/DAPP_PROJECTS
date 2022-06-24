@@ -4,7 +4,7 @@ export  const  TOKEN_CONTRACT="0xf5135EA29aD9705E9FFFECdBe27BFBd30a60C323"
 
 export const  TOKEN_SYMBOL="Metta"
 
-export  const  TOKEN_DECIMAL=18
+export  const  TOKEN_DECIMAL=9
 
 export  const  NETWORK_ID=56
 
